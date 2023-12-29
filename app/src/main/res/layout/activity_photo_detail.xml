@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    tools:context=".OfficialActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".OfficialActivity">
+
+        <TextView
+            android:id="@+id/detailLocationView"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:background="@color/teal"
+            android:text="Location"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/detailPoliticianImg"
+            android:layout_width="396dp"
+            android:layout_height="480dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.529"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detailNameView"
+            app:srcCompat="@drawable/brokenimage" />
+
+        <ImageView
+            android:id="@+id/detailPartyImg"
+            android:layout_width="70dp"
+            android:layout_height="67dp"
+            android:layout_marginTop="470dp"
+            app:layout_constraintBottom_toBottomOf="@+id/detailPoliticianImg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/detailPoliticianImg"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/dem_logo" />
+
+        <TextView
+            android:id="@+id/detailPositionView"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Position"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detailLocationView" />
+
+        <TextView
+            android:id="@+id/detailNameView"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Name"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detailPositionView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
